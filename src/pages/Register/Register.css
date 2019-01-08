@@ -1,0 +1,81 @@
+.hero-page {
+    padding: 50px 0;
+  }
+  .bg-black-3 {
+    background: #2a2a2a !important;
+  }
+  .bg-black-3 .form-control {
+    background: #303030;
+  }
+  
+  .bg-black-3 .form-control:focus {
+    background: #303030 !important;
+  }
+  
+  .bg-black-3 .label-template-checkbox::before {
+    background: #303030;
+  }
+   
+  hr.line {
+    border-color: #333;
+  }
+i{
+    margin-right : 5px;
+    color: #429244;
+}
+.h2{
+    text-align: left;
+}
+.customer-login{
+    padding: 10rem 0;
+}
+
+.customer-login h2 {
+    margin-bottom: 30px;
+  }
+  
+  .customer-login h4 {
+    color: #eee;
+  }
+  
+  .customer-login p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 30px 0;
+    line-height: 1.7rem;
+  }
+  
+  .customer-login hr {
+    margin: 30px 0;
+    border-color: #555;
+  }
+  
+  .customer-login input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .bg-black-2 {
+    background: #333333 !important;
+  }
+  .bg-black-2 .form-control {
+    background: #2c2c2c !important;
+  }
+  
+  .bg-black-2 .form-control:focus {
+    background: #2c2c2c !important;
+  }
+  
+  .bg-black-2 .label-template-checkbox::before {
+    background: #2c2c2c !important;
+  }
+  .has-line::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    background: #429244;
+  }
+  .text-thin {
+    font-weight: 400 !important;
+  }

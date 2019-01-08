@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Topbar.css';
-import CustomerLogin from '../../pages/Login/Customer-login';
 
 
 class Topbar extends Component {
@@ -35,8 +34,9 @@ class Topbar extends Component {
                     <div className="col-lg-6 text-right menu-right">
                         <ul className="list-inline">
                             <li className="list-inline-item" onClick={this.handleClick}><Link to="#" className="search-btn"><i className="fas fa-search"></i></Link></li>
-                            <li className="list-inline-item"><Link to="#"><i className="fa fa-heart-o"></i>Favourites</Link></li>
-                            <li className="list-inline-item"><Link to="/login" className="pr-0 border-right-0"><i className="far fa-user"></i>Login</Link></li>
+                            <li className="list-inline-item"><Link to="#"><i className="fas fa-heart"></i>Favourites</Link></li>
+                            <li className="list-inline-item"><Link to="/login"><i className="far fa-user"></i>Login</Link></li>
+                            <li className="list-inline-item"><Link to="/register" className="pr-0 border-right-0"><i className="fas fa-user-plus"></i>Register</Link></li>
                         </ul>
                     </div>
                     {this.state.showMe?
