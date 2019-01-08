@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import Button from '../../components/Button/Button';
+import Breadcrumb from '../../components/Breadnav/Breadcrumb';
 import './Customer-login.css';
 
 export default class CustomerLogin extends Component {
@@ -8,13 +9,8 @@ export default class CustomerLogin extends Component {
       <div>
         <section className="hero-page bg-black-3">
             <div className="container">
-            <h1 className="h2">User Area</h1>
-                <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><i className="fas fa-home"></i><Link to="/">Home</Link></li>
-                        <li aria-current="page" className="breadcrumb-item active">User Login</li>
-                    </ol>
-                </nav>
+              <h1 className="h2">Login / Create Account</h1>
+                <Breadcrumb /> 
             </div>
         </section>
         <section className="customer-login bg-black-2">
@@ -33,7 +29,7 @@ export default class CustomerLogin extends Component {
                     <input type="password" name="paddword" placeholder="Password" className="form-control" />
                   </div>
                   <div className="form-group">
-                    <button type="submit" className="btn btn-gradient">Login</button>
+                  <Button type={'submit'} className={"btn btn-gradient"} > Login </Button>
                   </div>
                 </form>
               </div>
@@ -53,7 +49,7 @@ export default class CustomerLogin extends Component {
                     <input type="password" name="password" placeholder="Password" className="form-control" />
                   </div>
                   <div className="form-group">
-                    <button type="submit" className="btn btn-gradient">Register</button>
+                    <Button type={'submit'} className={"btn btn-gradient"} > Register </Button>
                   </div>
                 </form>
               </div>

@@ -1,0 +1,36 @@
+.btn {
+    -webkit-transition: all 0.3s !important;
+    transition: all 0.3s !important;
+  }
+  .btn {
+    font-weight: 500;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    padding: 0.625rem 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    border-radius: 50px;
+    -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  }
+  
+  .btn:focus, .btn.focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(66, 146, 68, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(66, 146, 68, 0.25);
+  }
+.btn-gradient {
+    background-color: #429244;
+    background-image: -webkit-gradient(linear, left top, right top, from(#429244), to(#B1EA7E));
+    background-image: linear-gradient(to right, #429244, #B1EA7E);
+    border-color: transparent !important;
+    color: #fff;
+    border: none !important;
+  }
+  
+  .btn-gradient:hover, .btn-gradient:focus {
+    color: #fff;
+    opacity: 0.9;
+  }
