@@ -1,26 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Topbar from '../src/components/Topbar/Topbar';
 import './App.css';
+import CustomerLogin from './pages/Login/Customer-login';
 
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        
+
+            <Topbar />
+            <Route exact path="/login" component={CustomerLogin}/>
+        
       </div>
+      </BrowserRouter>
     );
   }
 }

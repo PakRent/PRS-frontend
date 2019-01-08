@@ -1,0 +1,17 @@
+.hero-page {
+    padding: 50px 0;
+  }
+  .bg-black-3 {
+    background: #2a2a2a !important;
+  }
+  .bg-black-3 .form-control {
+    background: #303030;
+  }
+  
+  .bg-black-3 .form-control:focus {
+    background: #303030 !important;
+  }
+  
+  .bg-black-3 .label-template-checkbox::before {
+    background: #303030;
+  }

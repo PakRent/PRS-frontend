@@ -1,0 +1,176 @@
+.top-bar {
+    background: #383838;
+    color: #fff;
+    padding: 15px 0;
+  }
+  
+  .top-bar a {
+    color: inherit;
+  }
+  
+  .top-bar a:hover, .top-bar a:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .top-bar ul {
+    margin-bottom: 0;
+  }
+  
+  .top-bar .menu-left {
+    color: #cbcbcb;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  
+  .top-bar .menu-right {
+    color: #fff;
+    font-size: 0.75rem;
+  }
+  
+  .top-bar .menu-right li {
+    margin: 0;
+  }
+  
+  .top-bar .menu-right a {
+    text-transform: uppercase;
+    padding: 0 20px;
+    border-right: 1px solid #b2b2b2;
+    font-weight: 500;
+  }
+  
+  .top-bar .menu-right a:hover, .top-bar .menu-right a:focus {
+    color: #5989e5;
+  }
+  
+  .top-bar .menu-right i {
+    margin-right: 5px;
+  }
+  
+  .search-area {
+    animation-name: example;
+    animation-duration: 2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.3s;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(42, 42, 42, 0.98);
+    z-index: 9999;
+    opacity: 0.9;
+
+  }
+
+  @keyframes example {
+    from {
+      right : 100%;
+    }
+    to {
+      right : 0%;
+    }
+  }
+
+  
+  
+ .search-area.is-visible {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+
+  .search-inner {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .search-inner form {
+    padding: 20px;
+    max-width: 700px;
+    width: 100%;
+    padding: 40px;
+  }
+  
+  .search-inner .form-group {
+    position: relative;
+  }
+  
+  .search-inner input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid #999;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  .search-inner input:focus {
+    border-color: #5989e5;
+  }
+  
+  .search-inner input::-moz-placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  
+  .search-inner input::-webkit-input-placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  
+  .search-inner input:-ms-input-placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  
+  .search-inner .submit {
+    background: none;
+    color: #999;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.2rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .search-inner .submit:hover {
+    color: #5989e5;
+  }
+  
+  .search-inner .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.08rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .search-inner .close-btn i {
+    margin-left: 5px;
+  }
+  
+  /* Top Bar MediaQueries --------------------------------------- */
+  @media (max-width: 767px) {
+    .top-bar .search-area form .submit {
+      position: static;
+      margin: 10px 0;
+      width: 100%;
+      color: #5989e5;
+      font-weight: 500;
+    }
+  }
+  
+  
