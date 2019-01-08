@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Customer-login.css';
 
 export default class CustomerLogin extends Component {
@@ -10,7 +11,7 @@ export default class CustomerLogin extends Component {
             <h1 className="h2">User Area</h1>
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li className="breadcrumb-item"><i className="fas fa-home"></i><Link to="/">Home</Link></li>
                         <li aria-current="page" className="breadcrumb-item active">User Login</li>
                     </ol>
                 </nav>
@@ -49,7 +50,7 @@ export default class CustomerLogin extends Component {
                     <input type="email" name="email" placeholder="Type your email address" className="form-control" />
                   </div>
                   <div className="form-group">
-                    <input type="password" name="paddword" placeholder="Password" className="form-control" />
+                    <input type="password" name="password" placeholder="Password" className="form-control" />
                   </div>
                   <div className="form-group">
                     <button type="submit" className="btn btn-gradient">Register</button>

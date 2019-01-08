@@ -40,7 +40,7 @@
   }
   
   .top-bar .menu-right a:hover, .top-bar .menu-right a:focus {
-    color: #5989e5;
+    color: #429244;
   }
   
   .top-bar .menu-right i {
@@ -109,7 +109,7 @@
   }
   
   .search-inner input:focus {
-    border-color: #5989e5;
+    border-color: #429244;
   }
   
   .search-inner input::-moz-placeholder {
@@ -142,7 +142,7 @@
   }
   
   .search-inner .submit:hover {
-    color: #5989e5;
+    color: #429244;
   }
   
   .search-inner .close-btn {
@@ -168,7 +168,7 @@
       position: static;
       margin: 10px 0;
       width: 100%;
-      color: #5989e5;
+      color: #429244;
       font-weight: 500;
     }
   }
