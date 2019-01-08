@@ -3,6 +3,7 @@ import Button from '../../components/Button/Button';
 import Breadcrumb from '../../components/Breadnav/Breadcrumb';
 import Input from '../../components/Forms/Formgroup';
 import './Customer-login.css';
+import Footer from '../../components/Footer/Footer';
 
 export default class CustomerLogin extends Component {
   render() {
@@ -27,18 +28,18 @@ export default class CustomerLogin extends Component {
                 <hr />
                 <form action="#" className="login-form text-left">
                     <Input
-                    inputType={"email"}
+                    inputtype={"email"}
                     title={"Email *"}
                     name={"email"}
                     placeholder={"Ex. jhon@gamil.com"}
-                    handleChange={this.handleInput}
+                    handlechange={this.handleInput}
                   />{" "}
                   <Input
-                    inputType={"password"}
+                    inputtype={"password"}
                     title={"Password *"}
                     name={"password"}
                     placeholder={"Your Password"}
-                    handleChange={this.handleInput}
+                    handlechange={this.handleInput}
                   />{" "}
                   
                   <Button type={'submit'} className={"btn btn-gradient"} title={"Login"}/>
@@ -48,6 +49,7 @@ export default class CustomerLogin extends Component {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     )
   }

@@ -27,27 +27,27 @@ export default class Register extends Component {
                 <hr />
                 <form action="#" className="login-form text-left">
                   <Input 
-                    inputType={"text"}
+                    inputtype={"text"}
                     title={"Full Name *"}
                     name={"name"}
                     placeholder={"Jhon Doe"}
-                    handleChange={this.handleInput}
+                    handlechange={this.handleInput}
                     />{" "}
 
                     <Input 
-                    inputType={"email"}
+                    inputtype={"email"}
                     title={"Email *"}
                     name={"email"}
                     placeholder={"Ex. jhon@gamil.com"}
-                    handleChange={this.handleInput}
+                    handlechange={this.handleInput}
                     />{" "}
                 
                     <Input 
-                    inputType={"password"}
+                    inputtype={"password"}
                     title={"Password *"}
                     name={"Password"}
                     placeholder={"Choose Your Password"}
-                    handleChange={this.handleInput}
+                    handlechange={this.handleInput}
                     />{" "}
                   
              

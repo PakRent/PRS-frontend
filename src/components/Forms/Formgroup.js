@@ -5,16 +5,16 @@ import './Formgroup.css';
   return (
 
     <div className="form-group">
-        <label for={props.name} className="label">
+        <label className="label">
         {props.title}
         </label>
       <input
         className="form-control"
         id={props.name}
         name={props.name}
-        type={props.inputType}
+        type={props.inputtype}
         value={props.value}
-        onChange={props.handleChange}
+        onChange={props.handlechange}
         placeholder={props.placeholder}
         {...props}
       />

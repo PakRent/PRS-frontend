@@ -1,0 +1,80 @@
+.bg-black-5 {
+    background: #1f1f1f !important;
+  }
+  footer.footer {
+    padding: 150px 0 0;
+  }
+  
+  footer.footer p {
+    color: #7e7e7e;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-size: 300;
+  }
+  
+
+  
+  footer.footer a {
+    color: #7e7e7e;
+    font-size: 0.9rem;
+  }
+  
+  footer.footer a:hover, footer.footer a:focus {
+    color: #429244;
+    text-decoration: none;
+  }
+  
+  footer.footer .social a {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  footer.footer .social a:hover, footer.footer .social a:focus {
+    color: #429244;
+    text-decoration: none;
+  }
+  
+  footer.footer ul a {
+    margin-bottom: 5px;
+  }
+  
+  footer.footer h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+.footer-p{
+    margin-top: 0px;
+}
+  footer.footer .newsletter-form .form-group {
+    position: relative;
+  }
+.logo{
+    height: 150px;
+    margin-top: -45px;
+}
+  footer.footer .newsletter-form .submit {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+.submit {
+    height: 55px;
+    width: 70px;
+}
+  
+  footer.footer .copyrights {
+    margin-top: 150px;
+    padding: 40px 0;
+  }
+  
+  footer.footer .copyrights p {
+    margin: 0;
+  }
+  
+  footer.footer .copyrights a {
+    color: #429244;
+  }
+  
