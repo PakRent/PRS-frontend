@@ -26,6 +26,9 @@ i{
 .h2{
     text-align: left;
 }
+.customer-login{
+    padding: 10rem 0;
+}
 
 .customer-login h2 {
     margin-bottom: 30px;
