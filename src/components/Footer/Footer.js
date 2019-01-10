@@ -10,7 +10,7 @@ export default class Footer extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4 brief">
-                        <div className="logo"><img src={require('../../assets/images/Logo.png')} alt="Logo"/></div>
+                        <div className="logo"><img src={require('../../assets/images/Pak-logo.png')} alt="Logo"/></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
                         <ul className="social list-inline">
                             <li className="list-inline-item"><Link to="#"><i className="fab fa-twitter"></i></Link></li>

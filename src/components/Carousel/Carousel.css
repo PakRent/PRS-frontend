@@ -1,0 +1,12 @@
+
+.carousel-item{
+    height: cover !important;
+    background-color: black !important;
+}
+.carousel-item img{
+    opacity: 0.3;
+}
+.carousel-caption 
+{
+    bottom: 25% !important;
+}

@@ -3,6 +3,7 @@ import Button from '../../components/Button/Button';
 import Breadcrumb from '../../components/Breadnav/Breadcrumb';
 import Input from '../../components/Forms/Formgroup';
 import './Register.css';
+import Footer from '../../components/Footer/Footer';
 
 export default class Register extends Component {
   render() {
@@ -58,6 +59,7 @@ export default class Register extends Component {
             </div>
           </div>
         </section>
+        <Footer/>
       </div>
     )
   }
