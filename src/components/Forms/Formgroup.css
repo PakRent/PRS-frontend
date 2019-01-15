@@ -1,16 +1,63 @@
-.form-group {
+.FormGroup {
     position: relative;
   }
   
-  .form-control {
+  .FormControl {
     border-radius: 40px;
     border: none !important;
     background: #333333;
     color: #fff !important;
     font-weight: 300;
-    height: 3.5rem;
+    height: 3rem;
+    width: 100%;
   }
-  .form-control {
+  .EmailControl {
+    border-radius: 40px;
+    border: none !important;
+    background: #2a2a2a;
+    color: #fff !important;
+    font-weight: 300;
+    height: 3.5rem;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .custom-select {
+    position: relative;
+    display: block;
+    border: none;
+    border-radius: 25px;
+    height: 3rem;
+    background-color: #333333;
+    color: #fff;
+    padding-left: 20px;
+  }
+  .custom-select{
+    padding: 0.625rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #495057;
+    background-color: none;
+  
+    border-radius: 40px;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  }
+  
+  .custom-select:focus{
+    color: #999;
+    background-color: #333333;
+    border-color: #8aca8b;
+    outline: none;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(66, 146, 68, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(66, 146, 68, 0.25);
+  }
+  
+  
+  
+
+  .FormControl, .EmailControl {
     padding: 0.625rem 1.5rem;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -23,7 +70,7 @@
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
   }
-  .form-control:focus {
+  .FormControl:focus {
     color: #495057;
     background-color: #fff;
     border-color: #8aca8b;
@@ -31,56 +78,64 @@
     -webkit-box-shadow: 0 0 0 0.2rem rgba(66, 146, 68, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(66, 146, 68, 0.25);
   }
+  .EmailControl:focus {
+    color: #495057;
+    background-color: #2a2a2a;
+    border-color: #8aca8b;
+    outline: none;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(66, 146, 68, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(66, 146, 68, 0.25);
+  }
   
-  .form-control::-webkit-input-placeholder {
+  .FormControl::-webkit-input-placeholder {
     color: #868e96;
   }
   
-  .form-control:-ms-input-placeholder {
+  .FormControl:-ms-input-placeholder {
     color: #868e96;
   }
   
-  .form-control::placeholder {
+  .FormControl::placeholder {
     color: #868e96;
   }
   
-  .form-control:disabled, .form-control[readonly] {
+  .FormControl:disabled, .FormControl[readonly] {
     background-color: #e9ecef;
   }
   
-  .form-control::-moz-placeholder {
+  .FormControl::-moz-placeholder {
     font-size: 0.9rem;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
     color: #999 !important;
   }
   
-  .form-control::-webkit-input-placeholder {
+  .FormControl::-webkit-input-placeholder {
     font-size: 0.9rem;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
     color: #999 !important;
   }
   
-  .form-control:-ms-input-placeholder {
+  .FormControl:-ms-input-placeholder {
     font-size: 0.9rem;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
     color: #999 !important;
   }
   
-  .form-control:focus {
+  .FormControl:focus {
     background: #333333 !important;
   }
   
-  .label {
+  .Label {
     
     color: #ccc;
     padding-left: 15px;
    
   }
   
-  .label-template-checkbox {
+  .Label-template-checkbox {
     color: #999;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -94,7 +149,7 @@
     user-select: none;
   }
   
-  .label-template-checkbox::before {
+  .Label-template-checkbox::before {
     content: '';
     width: 16px;
     height: 16px;
@@ -107,7 +162,7 @@
     transform: translateY(-50%);
   }
   
-  .label-template-checkbox::after {
+  .Label-template-checkbox::after {
     content: '\f00c';
     width: 16px;
     height: 16px;
@@ -128,11 +183,11 @@
     font-size: 0.65rem;
   }
   
-  .label-template-checkbox input {
+  .Label-template-checkbox input {
     display: none;
   }
   
-  .label-template-checkbox.active::after {
+  .Label-template-checkbox.active::after {
     opacity: 1;
   }
   

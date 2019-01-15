@@ -5,7 +5,8 @@ import './App.css';
 import CustomerLogin from './pages/Login/Customer-login';
 import Register from './pages/Register/Register';
 import Navbar from './components/Navbar/Navbar';
-import Carousel from './components/Carousel/Carousel';
+
+import Layout from './pages/Layout/Layout';
 
 class App extends Component {
   state = {
@@ -28,7 +29,7 @@ class App extends Component {
 
             <Topbar />
             <Navbar />
-            <Carousel />
+            <Route exact path="/" component={Layout} />
             <Route exact path="/login" component={CustomerLogin}/>
             <Route exact path="/register" component={Register}/>
         

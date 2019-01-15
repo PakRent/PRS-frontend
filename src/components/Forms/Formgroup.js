@@ -1,24 +1,47 @@
 import React from 'react';
 import './Formgroup.css';
 
- export default (props) => {
+const Input = (props) => {
+
+    let inputElement = null;
+
+    switch (props.elementType) {
+      case ('input'):
+      inputElement = <input className="FormControl" {...props} value={props.value}/>;
+      break;
+      case ('email'):
+      inputElement = <input className="EmailControl" {...props} value={props.value}/>;
+      break;
+      case('textarea'):
+      inputElement = <textarea className="FormControl" {...props} value={props.value}/>;
+      break;
+      case('select'):
+      inputElement = (
+        <select className="custom-select" value={props.value}>
+
+          {props.elementConfig.options.map(option =>(
+
+            <option key={option.value} value={option.value}>
+              {option.displayValue}
+            </option>
+          ))}
+        </select>
+      );
+      break;
+      default:
+      inputElement = <input  className="FormControl" {...props} value={props.value} />
+    }
   return (
 
-    <div className="form-group">
-        <label className="label">
-        {props.title}
+    <div className="FormGroup">
+        <label className="Label">
+        {props.label}
         </label>
-      <input
-        className="form-control"
-        id={props.name}
-        name={props.name}
-        type={props.inputtype}
-        value={props.value}
-        onChange={props.handlechange}
-        placeholder={props.placeholder}
-        {...props}
-      />
+
+        {inputElement}
+      
 
     </div>
   )
 }
+export default Input;

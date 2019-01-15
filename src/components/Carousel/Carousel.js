@@ -8,19 +8,14 @@ export default class Carousel extends Component {
 
         <div>
             <div className="carousel slide carousel-fade" id="carouselIndicators" data-ride="carousel">
-                <ol className="carousel-indicators">
-                    <li data-target="#carouselIndicators" data-slide-to="0" className="active"></li>
-                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
-                </ol>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img className="d-block w-100" style={{height: '80vh'}} src={require("../../assets/images/listing-bg-2.jpeg")} alt="First slide" />
-                        <div class="carousel-caption container text-left">
-                            <div class="row">
-                            <div class="col-lg-8">
-                                <h1>Voluptatem accusantium doloremque</h1>
-                                <p class="template-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p><Link to="#" className="btn btn-gradient">Learn More</Link>
+                        <div className="carousel-caption container text-left">
+                            <div className="row">
+                            <div className="col-lg-6">
+                                <h1>Find Your Dream Home</h1>
+                                <p className="template-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p><Link to="#" className="btn btn-gradient">Learn More</Link>
                             </div>
                             </div>
                         </div>

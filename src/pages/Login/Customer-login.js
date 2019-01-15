@@ -28,17 +28,19 @@ export default class CustomerLogin extends Component {
                 <hr />
                 <form action="#" className="login-form text-left">
                     <Input
-                    inputtype={"email"}
-                    title={"Email *"}
-                    name={"email"}
-                    placeholder={"Ex. jhon@gamil.com"}
+                    inputtype="email"
+                    label="Email *"
+                    type="email"
+                    name="email"
+                    placeholder="Ex. jhon@gamil.com"
                     handlechange={this.handleInput}
                   />{" "}
                   <Input
-                    inputtype={"password"}
-                    title={"Password *"}
-                    name={"password"}
-                    placeholder={"Your Password"}
+                    inputtype="email"
+                    label="Password *"
+                    type="password"
+                    name="password"
+                    placeholder="Your Password"
                     handlechange={this.handleInput}
                   />{" "}
                   
