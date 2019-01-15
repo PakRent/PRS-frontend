@@ -3,13 +3,25 @@ import { Link } from 'react-router-dom';
 import Carousel from '../../components/Carousel/Carousel';
 import Input from '../../components/Forms/Formgroup';
 import Button from '../../components/Button/Button';
+import Checkbox from '../../components/checkbox/Checkbox';
 import './Layout.css';
+
+
+const OPTIONS = ["Air Conditioner", "Alarm", "Central Heating", "Gym", "Internet", "Laundry Room", "Swimming Pool"];
 
 class Layout extends Component {
     constructor(props){
         super(props)
     
    this.state = {
+        checkboxes: OPTIONS.reduce(
+            (options, option) => ({
+                ...options,
+                [option]:false
+            }),
+            {}
+        ),
+
         opened : false,
 
         searchForm: {
@@ -46,8 +58,49 @@ class Layout extends Component {
             }
         }
     }
+
     this.toggleBox = this.toggleBox.bind(this);
 }
+
+selectAllCheckboxes = isSelected => {
+    Object.keys(this.state.checkboxes).forEach(checkbox => {
+      // BONUS: Can you explain why we pass updater function to setState instead of an object?
+      this.setState(prevState => ({
+        checkboxes: {
+          ...prevState.checkboxes,
+          [checkbox]: isSelected
+        }
+      }));
+    });
+  };
+
+  selectAll = () => this.selectAllCheckboxes(true);
+
+  deselectAll = () => this.selectAllCheckboxes(false);
+
+  handleCheckboxChange = changeEvent => {
+    const { name } = changeEvent.target;
+
+    this.setState(prevState => ({
+      checkboxes: {
+        ...prevState.checkboxes,
+        [name]: !prevState.checkboxes[name]
+      }
+    }));
+  };
+
+  createCheckbox = option => (
+    <Checkbox
+      label={option}
+      isSelected={this.state.checkboxes[option]}
+      onCheckboxChange={this.handleCheckboxChange}
+      key={option}
+    />
+  );
+
+  createCheckboxes = () => OPTIONS.map(this.createCheckbox);
+
+
 toggleBox() {
     const { opened } = this.state;
     this.setState({
@@ -108,7 +161,7 @@ toggleBox() {
                         </div>
 
                         
-
+                        
                       
                     </div>
                     {/* Second Row */}
@@ -148,7 +201,8 @@ toggleBox() {
                     
                     </div>
                 </div>
-            
+                            
+
                 )} 
                 { opened && (
                     <div className="row all-options">
@@ -182,30 +236,9 @@ toggleBox() {
                                 value={formElement.config.value}
                             />
                         ))}
-                    
                     </div>
-                    <div className="form group col-lg-12">
-                        <label htmlFor="air_conditioning" className="label-template-checkbox">Air Conditioning
-                            <input type="checkbox" name="air_conditioning" id="air_conditioning" />
-                        </label>
-                        <label htmlFor="alarm" className="label-template-checkbox">Alarm
-                            <input type="checkbox" name="alarm" id="alarm" />
-                        </label>
-                        <label htmlFor="central_heating" className="label-template-checkbox">Central Heating
-                            <input type="checkbox" name="central_heating" id="central_heating" />
-                        </label>
-                        <label htmlFor="gym" className="label-template-checkbox">Gym
-                            <input type="checkbox" name="gym" id="gym" />
-                        </label>
-                        <label htmlFor="internet" className="label-template-checkbox">Internet
-                            <input type="checkbox" name="internet" id="internet" />
-                        </label>
-                        <label htmlFor="laundry_room" className="label-template-checkbox">Laundry Room
-                            <input type="checkbox" name="laundry_room" id="laundry_room" />
-                        </label>
-                        <label htmlFor="swimming_pool" className="label-template-checkbox">Swimming Pool
-                            <input type="checkbox" name="swimming_pool" id="swimming_pool" />
-                        </label>
+                    <div className="form group row">
+                        {this.createCheckboxes()}
                     </div>
                     
                 </div>

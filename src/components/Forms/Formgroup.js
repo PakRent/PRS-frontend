@@ -28,6 +28,7 @@ const Input = (props) => {
         </select>
       );
       break;
+    
       default:
       inputElement = <input  className="FormControl" {...props} value={props.value} />
     }
